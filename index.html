@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <title>A Speed Typing Game by Shivam Haldar</title>
+</head>
+<body>
+  <header>
+    <h1>Type Script Game :</h1>
+    <p>a speed typing game build with pure JavaScript</p>
+  </header>
+  <main>
+    <!-- Word & Input -->
+      <p class="typeBelow">Type the given word within 
+        <span class="text-success" id="seconds"></span>
+      </p>
+
+      <h3 id="current-word"></h3>
+
+      <input type="text" id="word-input" placeholder="Start typing..." autofocus>
+      <h3> Result </h3>
+      <h4 id="message"></h4>
+
+      <!-- Time & Score Columns -->
+      <h3>Time Left :
+        <span id="time">0</span>
+      </h3>
+
+      <h3>Score :
+        <span id="score">0</span>
+      </h3>
+
+      <!-- Instructions -->
+      <div id="instructions">
+        <h5>Instruction :</h5>
+        <p>Type each word in the given amount of seconds to score. To play, just start typing the current word and your score will go up.</p>
+      </div>
+
+  </main>
+  <footer>
+      <p>Made with ❤️ by Shivam Haldar</p>
+    </footer>
+  <script src="game.js"></script>
+</body>
+</html>
